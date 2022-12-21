@@ -1,0 +1,16 @@
+{
+  "name": "Covid-TW-Test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css.gg": "^2.0.0",
+    "tailwindcss": "^2.0.2"
+  }
+}

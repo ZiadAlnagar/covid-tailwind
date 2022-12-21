@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .fb-75 {
+    flex-basis: 75%;
+  }
+
+  .fb-60 {
+    flex-basis: 60%;
+  }
+
+  .fb-50 {
+    flex-basis: 50%;
+  }
+
+  .fb-40 {
+    flex-basis: 40%;
+  }
+
+  .fb-35 {
+    flex-basis: 35%;
+  }
+
+  .fb-33 {
+    flex-basis: 33.333333%;
+  }
+
+  .fb-30 {
+    flex-basis: 30%;
+  }
+
+  .fb-25 {
+    flex-basis: 25%;
+  }
+
+  .fb-22-5 {
+    flex-basis: 22.5%;
+  }
+
+  .fb-20 {
+    flex-basis: 20%;
+  }
+
+  .fb-16 {
+    flex-basis: 16.666666%;
+  }
+
+  .fb-15 {
+    flex-basis: 15%;
+  }
+}
+
+button {
+  @apply focus:outline-none;
+}
+
+.button {
+  @apply flex items-center font-semibold;
+}
+
+.section {
+  @apply flex w-5/6 m-auto py-20;
+}
+
+.title {
+  @apply font-oswald font-black uppercase text-4xl text-custom-800 pt-2 pb-6;
+}
+
+.title-sm {
+  @apply font-bold uppercase tracking-widest text-blue-500;
+}
+
+.menu-side-item {
+  @apply flex justify-between w-full px-7 py-4 border-b border-gray-400 border-opacity-50 hover:border-opacity-80  text-blue-400;
+}
+
+.symptoms-card {
+  @apply fb-30 relative px-4 py-6 shadow-md rounded-md;
+}
+
+.symptoms-card-icon {
+  @apply absolute -top-10 w-20 h-20 rounded-full;
+}
+
+.symptoms-card-title {
+  @apply pb-2 font-bold text-blue-500;
+}
+
+.symptoms-card-highlight {
+  @apply font-bold text-custom-900;
+}
+
+.advice-card {
+  @apply fb-25 p-2;
+}
+
+.advice-card-icon {
+  @apply m-auto rounded-full w-32 h-32;
+}
+
+.advice-card-title {
+  @apply font-bold pt-6 pb-2 text-custom-900;
+}
+
+.step {
+  @apply flex py-3;
+}
+
+.step-icon {
+  @apply text-white;
+}
+
+.step-icon-bg {
+  @apply bg-green-500 rounded-full self-start mr-2;
+}
+
+.step-highlight {
+  @apply font-bold text-custom-900;
+}
+
+.hand-card-icon {
+  @apply rounded-full w-28 h-28 m-auto;
+}
+
+.gg-bell {
+  --ggs: 3;
+}
+
+.self-care .gg-arrow-right {
+  --ggs: 0.8;
+}
+
+.do-card-icon {
+  @apply rounded-full border-2 border-blue-500 w-20 h-20;
+}
+
+.do-card-border {
+  @apply absolute flex justify-center items-center w-5 h-5 rounded-full;
+}
+
+.do-card-text {
+  @apply font-bold text-sm text-blue-500;
+}
+
+.dont .gg-math-plus {
+  --ggs: 0.8;
+  transform: rotate(45deg);
+}
+
+.accordion-side-menu {
+  @apply flex justify-between items-center w-full rounded-md px-6 py-3 border-2 border-gray-400 border-opacity-30 hover:border-blue-500 hover:text-blue-500 focus:border-blue-500 focus:text-blue-500;
+}
+
+.bg-custom-600 {
+  background-color: #50658e;
+}
+
+footer .gg-facebook,
+footer .gg-twitter,
+footer .gg-youtube {
+  --ggs: 0.8;
+}
+
+footer .link {
+  @apply hover:text-blue-500;
+}
+
+#bck {
+  position: fixed;
+  z-index: 999;
+  bottom: 2rem;
+  right: 2rem;
+  transition: all .25s ease-in-out;
+}
+
+.bck-show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bck-hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#nav{
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  transition: all .25s ease-in-out;
+}
+
+.nav-trans {
+ background-color: transparent;
+}
+
+.nav-white {
+  background-color: white;
+}
